@@ -1,0 +1,27 @@
+/* SETRA public pages (Phase 40 task 7). Colours from the app's palette (colors.dart). */
+:root {
+  --bg: #F5F5F3; --surface: #FFFFFF; --text: #0E0F10; --muted: #585B60;
+  --divider: #E1E1DC; --accent-text: #476000;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0B0C0D; --surface: #141517; --text: #F4F5F2; --muted: #9EA2A9;
+    --divider: #26282C; --accent-text: #C6F24E;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+.wordmark { letter-spacing: 0.35em; font-weight: 600; font-size: 14px; color: var(--muted); }
+h1 { font-size: 28px; line-height: 1.25; margin: 8px 0 4px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { color: var(--text); }
+.meta { color: var(--muted); font-size: 14px; }
+a { color: var(--accent-text); }
+table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--divider); }
+.card { background: var(--surface); border: 1px solid var(--divider); border-radius: 12px; padding: 16px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
